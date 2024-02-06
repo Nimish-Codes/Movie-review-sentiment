@@ -5,7 +5,7 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-nltk.download(vader_lexicon)
+nltk.download('vader_lexicon')
 
 # Open the .pkl file in read binary mode ('rb')
 with open('sentiment.pkl', 'rb') as f:
