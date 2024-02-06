@@ -5,10 +5,10 @@ from keras.preprocessing.sequence import pad_sequences
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import urllib.request
 
-# Download the pickled model file from the URL
-url = 'https://github.com/Nimish-Codes/pickle-model-for-sentiment-analysis/blob/main/sentiment.pkl'
-with urllib.request.urlopen(url) as f:
-  model = pickle.load(f)
+# Open the .pkl file in read binary mode ('rb')
+with open('sentiment.pkl', 'rb') as f:
+    # Load the data from the file
+    model = pickle.load(f)
 
 # Load Tokenizer
 tokenizer = Tokenizer()
