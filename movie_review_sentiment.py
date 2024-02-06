@@ -40,7 +40,7 @@ if user_input:
         vader_score = sia.polarity_scores(user_input)
 
         # Display results in the Streamlit app
-        st.write(f"Neural Network Prediction: {'Positive' if prediction >= 0.5 else 'Negative'}")
+        # st.write(f"Neural Network Prediction: {'Positive' if prediction >= 0.5 else 'Negative'}")
         st.write(f"VADER Sentiment Analysis: {'Positive' if vader_score['compound'] >= 0 else 'Negative'}")
 else:
     st.warning("Please enter your text.")
