@@ -6,7 +6,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import urllib.request
 
 # Download the pickled model file from the URL
-url = 'https://example.com/trained_model.pkl'
+url = 'https://github.com/Nimish-Codes/pickle-model-for-sentiment-analysis/blob/main/sentiment.pkl'
 with urllib.request.urlopen(url) as f:
   model = pickle.load(f)
 
